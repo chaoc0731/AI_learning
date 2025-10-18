@@ -1,0 +1,13 @@
+# NER API 文档
+
+## 接口说明
+- 地址: `/ner/predict`
+- 方法: POST
+- 内容类型: application/json
+
+## 请求参数
+```json
+{
+    "text": "字符串，需要识别的文本",
+    "model_type": "字符串，模型类型：lstm 或 bert"
+}
