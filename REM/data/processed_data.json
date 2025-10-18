@@ -1,0 +1,296 @@
+[
+  {
+    "text": "患者服用阿司匹林后头痛症状明显缓解[SEP]阿司匹林[SEP]头痛",
+    "entity1": "阿司匹林",
+    "entity2": "头痛",
+    "relation": "治疗"
+  },
+  {
+    "text": "糖尿病可能引起视网膜病变[SEP]糖尿病[SEP]视网膜病变",
+    "entity1": "糖尿病",
+    "entity2": "视网膜病变",
+    "relation": "引起"
+  },
+  {
+    "text": "高血压患者需要定期服用硝苯地平控制血压[SEP]高血压[SEP]硝苯地平",
+    "entity1": "高血压",
+    "entity2": "硝苯地平",
+    "relation": "治疗"
+  },
+  {
+    "text": "CT检查可以帮助诊断肺癌[SEP]CT检查[SEP]肺癌",
+    "entity1": "CT检查",
+    "entity2": "肺癌",
+    "relation": "诊断"
+  },
+  {
+    "text": "长期吸烟会导致慢性支气管炎[SEP]吸烟[SEP]慢性支气管炎",
+    "entity1": "吸烟",
+    "entity2": "慢性支气管炎",
+    "relation": "引起"
+  },
+  {
+    "text": "接种流感疫苗可以有效预防流感[SEP]流感疫苗[SEP]流感",
+    "entity1": "流感疫苗",
+    "entity2": "流感",
+    "relation": "预防"
+  },
+  {
+    "text": "青霉素可能引起过敏反应[SEP]青霉素[SEP]过敏反应",
+    "entity1": "青霉素",
+    "entity2": "过敏反应",
+    "relation": "副作用"
+  },
+  {
+    "text": "MRI扫描用于检测脑部肿瘤[SEP]MRI扫描[SEP]脑部肿瘤",
+    "entity1": "MRI扫描",
+    "entity2": "脑部肿瘤",
+    "relation": "诊断"
+  },
+  {
+    "text": "阿托伐他汀用于降低胆固醇[SEP]阿托伐他汀[SEP]胆固醇",
+    "entity1": "阿托伐他汀",
+    "entity2": "胆固醇",
+    "relation": "治疗"
+  },
+  {
+    "text": "肥胖容易引发二型糖尿病[SEP]肥胖[SEP]二型糖尿病",
+    "entity1": "肥胖",
+    "entity2": "二型糖尿病",
+    "relation": "引起"
+  },
+  {
+    "text": "胃镜检查发现胃溃疡[SEP]胃镜检查[SEP]胃溃疡",
+    "entity1": "胃镜检查",
+    "entity2": "胃溃疡",
+    "relation": "诊断"
+  },
+  {
+    "text": "胰岛素治疗糖尿病效果显著[SEP]胰岛素[SEP]糖尿病",
+    "entity1": "胰岛素",
+    "entity2": "糖尿病",
+    "relation": "治疗"
+  },
+  {
+    "text": "缺乏运动可能导致心血管疾病[SEP]缺乏运动[SEP]心血管疾病",
+    "entity1": "缺乏运动",
+    "entity2": "心血管疾病",
+    "relation": "引起"
+  },
+  {
+    "text": "心电图检查心律不齐[SEP]心电图[SEP]心律不齐",
+    "entity1": "心电图",
+    "entity2": "心律不齐",
+    "relation": "诊断"
+  },
+  {
+    "text": "维生素C补充剂预防感冒[SEP]维生素C补充剂[SEP]感冒",
+    "entity1": "维生素C补充剂",
+    "entity2": "感冒",
+    "relation": "预防"
+  },
+  {
+    "text": "化疗药物会引起恶心呕吐[SEP]化疗药物[SEP]恶心呕吐",
+    "entity1": "化疗药物",
+    "entity2": "恶心呕吐",
+    "relation": "副作用"
+  },
+  {
+    "text": "B超检查显示肝脏正常[SEP]B超检查[SEP]肝脏",
+    "entity1": "B超检查",
+    "entity2": "肝脏",
+    "relation": "诊断"
+  },
+  {
+    "text": " Metformin控制血糖水平[SEP]Metformin[SEP]血糖",
+    "entity1": "Metformin",
+    "entity2": "血糖",
+    "relation": "治疗"
+  },
+  {
+    "text": "高盐饮食导致高血压[SEP]高盐饮食[SEP]高血压",
+    "entity1": "高盐饮食",
+    "entity2": "高血压",
+    "relation": "引起"
+  },
+  {
+    "text": "X光片诊断骨折[SEP]X光片[SEP]骨折",
+    "entity1": "X光片",
+    "entity2": "骨折",
+    "relation": "诊断"
+  },
+  {
+    "text": "接种HPV疫苗预防宫颈癌[SEP]HPV疫苗[SEP]宫颈癌",
+    "entity1": "HPV疫苗",
+    "entity2": "宫颈癌",
+    "relation": "预防"
+  },
+  {
+    "text": "抗生素使用可能导致肠道菌群失调[SEP]抗生素[SEP]肠道菌群失调",
+    "entity1": "抗生素",
+    "entity2": "肠道菌群失调",
+    "relation": "副作用"
+  },
+  {
+    "text": "PET-CT检测癌症转移[SEP]PET-CT[SEP]癌症",
+    "entity1": "PET-CT",
+    "entity2": "癌症",
+    "relation": "诊断"
+  },
+  {
+    "text": "降压药控制血压稳定[SEP]降压药[SEP]血压",
+    "entity1": "降压药",
+    "entity2": "血压",
+    "relation": "治疗"
+  },
+  {
+    "text": "长期饮酒会引起肝硬化[SEP]长期饮酒[SEP]肝硬化",
+    "entity1": "长期饮酒",
+    "entity2": "肝硬化",
+    "relation": "引起"
+  },
+  {
+    "text": "超声检查发现肾结石[SEP]超声检查[SEP]肾结石",
+    "entity1": "超声检查",
+    "entity2": "肾结石",
+    "relation": "诊断"
+  },
+  {
+    "text": "阿司匹林预防心肌梗死[SEP]阿司匹林[SEP]心肌梗死",
+    "entity1": "阿司匹林",
+    "entity2": "心肌梗死",
+    "relation": "预防"
+  },
+  {
+    "text": "化疗可能导致脱发[SEP]化疗[SEP]脱发",
+    "entity1": "化疗",
+    "entity2": "脱发",
+    "relation": "副作用"
+  },
+  {
+    "text": "血常规检查贫血[SEP]血常规[SEP]贫血",
+    "entity1": "血常规",
+    "entity2": "贫血",
+    "relation": "诊断"
+  },
+  {
+    "text": "胰岛素依赖型糖尿病[SEP]胰岛素[SEP]糖尿病",
+    "entity1": "胰岛素",
+    "entity2": "糖尿病",
+    "relation": "治疗"
+  },
+  {
+    "text": "空气污染引发呼吸道疾病[SEP]空气污染[SEP]呼吸道疾病",
+    "entity1": "空气污染",
+    "entity2": "呼吸道疾病",
+    "relation": "引起"
+  },
+  {
+    "text": "胃镜诊断胃炎[SEP]胃镜[SEP]胃炎",
+    "entity1": "胃镜",
+    "entity2": "胃炎",
+    "relation": "诊断"
+  },
+  {
+    "text": "疫苗接种预防传染病[SEP]疫苗[SEP]传染病",
+    "entity1": "疫苗",
+    "entity2": "传染病",
+    "relation": "预防"
+  },
+  {
+    "text": "长期服药可能导致肝损伤[SEP]长期服药[SEP]肝损伤",
+    "entity1": "长期服药",
+    "entity2": "肝损伤",
+    "relation": "副作用"
+  },
+  {
+    "text": "CT扫描诊断肺炎[SEP]CT扫描[SEP]肺炎",
+    "entity1": "CT扫描",
+    "entity2": "肺炎",
+    "relation": "诊断"
+  },
+  {
+    "text": "降压药物治疗高血压[SEP]降压药物[SEP]高血压",
+    "entity1": "降压药物",
+    "entity2": "高血压",
+    "relation": "治疗"
+  },
+  {
+    "text": "高脂饮食导致动脉硬化[SEP]高脂饮食[SEP]动脉硬化",
+    "entity1": "高脂饮食",
+    "entity2": "动脉硬化",
+    "relation": "引起"
+  },
+  {
+    "text": "B超诊断胆囊结石[SEP]B超[SEP]胆囊结石",
+    "entity1": "B超",
+    "entity2": "胆囊结石",
+    "relation": "诊断"
+  },
+  {
+    "text": "维生素D预防骨质疏松[SEP]维生素D[SEP]骨质疏松",
+    "entity1": "维生素D",
+    "entity2": "骨质疏松",
+    "relation": "预防"
+  },
+  {
+    "text": "放疗引起皮肤灼伤[SEP]放疗[SEP]皮肤灼伤",
+    "entity1": "放疗",
+    "entity2": "皮肤灼伤",
+    "relation": "副作用"
+  },
+  {
+    "text": "心电图诊断冠心病[SEP]心电图[SEP]冠心病",
+    "entity1": "心电图",
+    "entity2": "冠心病",
+    "relation": "诊断"
+  },
+  {
+    "text": "胰岛素注射控制糖尿病[SEP]胰岛素[SEP]糖尿病",
+    "entity1": "胰岛素",
+    "entity2": "糖尿病",
+    "relation": "治疗"
+  },
+  {
+    "text": "吸烟引起慢性阻塞性肺病[SEP]吸烟[SEP]慢性阻塞性肺病",
+    "entity1": "吸烟",
+    "entity2": "慢性阻塞性肺病",
+    "relation": "引起"
+  },
+  {
+    "text": "MRI诊断脑梗死[SEP]MRI[SEP]脑梗死",
+    "entity1": "MRI",
+    "entity2": "脑梗死",
+    "relation": "诊断"
+  },
+  {
+    "text": "流感疫苗预防季节性流感[SEP]流感疫苗[SEP]季节性流感",
+    "entity1": "流感疫苗",
+    "entity2": "季节性流感",
+    "relation": "预防"
+  },
+  {
+    "text": "抗癌药物导致白细胞减少[SEP]抗癌药物[SEP]白细胞减少",
+    "entity1": "抗癌药物",
+    "entity2": "白细胞减少",
+    "relation": "副作用"
+  },
+  {
+    "text": "X光诊断肺结核[SEP]X光[SEP]肺结核",
+    "entity1": "X光",
+    "entity2": "肺结核",
+    "relation": "诊断"
+  },
+  {
+    "text": "降压药维持血压正常[SEP]降压药[SEP]血压",
+    "entity1": "降压药",
+    "entity2": "血压",
+    "relation": "治疗"
+  },
+  {
+    "text": "糖尿病引起肾病[SEP]糖尿病[SEP]肾病",
+    "entity1": "糖尿病",
+    "entity2": "肾病",
+    "relation": "引起"
+  }
+]
