@@ -1,0 +1,854 @@
+2025-10-26 17:45:17,296 - src.visualization.dashboard - WARNING - 样式 default 不可用，使用默认样式
+2025-10-26 17:45:17,297 - src.visualization.dashboard - INFO - 成功设置seaborn样式
+2025-10-26 17:45:17,297 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-26 17:45:17,297 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-26 17:45:17,991 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-26 17:45:17,992 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-26 17:45:23,538 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-26 17:45:23,538 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-26 17:45:28,279 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-26 17:45:28,547 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-26 17:45:28,713 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-26 17:45:28,713 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-26 17:45:28,713 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-26 17:45:28,713 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-26 17:45:28,713 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-26 17:45:28,713 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-26 17:45:28,713 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-26 17:45:29,736 - src.data.preprocessor - INFO - events数据预处理完成，形状: (2756101, 12)
+2025-10-26 17:45:29,736 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-26 17:45:31,549 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-26 17:45:50,832 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-26 17:45:50,958 - src.data.preprocessor - INFO - 开始合并数据集...
+2025-10-26 17:45:50,958 - src.data.preprocessor - INFO - 检测到大文件，使用优化合并策略...
+2025-10-26 17:45:51,126 - src.data.preprocessor - INFO - 开始优化item_properties内存使用...
+2025-10-26 17:45:51,586 - src.data.preprocessor - INFO - 内存优化完成: 59.62MB -> 22.45MB (节省 37.16MB)
+2025-10-26 17:45:52,127 - src.data.preprocessor - INFO - 数据集合并完成，最终形状: (2756101, 16)
+2025-10-26 17:45:52,131 - src.data.preprocessor - INFO - 属性数据覆盖度: 90.73%
+2025-10-26 17:45:52,132 - __main__ - ERROR - 分析流程执行失败: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+2025-10-26 17:53:08,938 - src.visualization.dashboard - WARNING - 样式 default 不可用，使用默认样式
+2025-10-26 17:53:08,938 - src.visualization.dashboard - INFO - 成功设置seaborn样式
+2025-10-26 17:53:08,939 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-26 17:53:08,939 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-26 17:53:09,638 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-26 17:53:09,638 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-26 17:53:15,215 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-26 17:53:15,215 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-26 17:53:19,995 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-26 17:53:20,240 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-26 17:53:20,433 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-26 17:53:20,433 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-26 17:53:20,433 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-26 17:53:20,433 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-26 17:53:20,433 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-26 17:53:20,433 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-26 17:53:20,433 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-26 17:53:21,562 - src.data.preprocessor - INFO - events数据预处理完成，形状: (2756101, 12)
+2025-10-26 17:53:21,562 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-26 17:53:23,233 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-26 17:53:42,743 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-26 17:53:42,864 - src.data.preprocessor - INFO - 开始合并数据集...
+2025-10-26 17:53:42,864 - src.data.preprocessor - INFO - 检测到大文件，使用优化合并策略...
+2025-10-26 17:53:43,032 - src.data.preprocessor - INFO - 开始优化item_properties内存使用...
+2025-10-26 17:53:43,503 - src.data.preprocessor - INFO - 内存优化完成: 59.62MB -> 22.45MB (节省 37.16MB)
+2025-10-26 17:53:44,064 - src.data.preprocessor - INFO - 数据集合并完成，最终形状: (2756101, 16)
+2025-10-26 17:53:44,067 - src.data.preprocessor - INFO - 属性数据覆盖度: 90.73%
+2025-10-26 17:53:45,407 - src.data.preprocessor - INFO - 处理后的数据已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\processed\processed_data.parquet
+2025-10-26 17:53:45,407 - __main__ - INFO - === 步骤3: RFM分析 ===
+2025-10-26 17:53:45,407 - src.analysis.rfm_analyzer - INFO - 开始计算RFM指标...
+2025-10-26 17:54:41,307 - src.analysis.rfm_analyzer - INFO - RFM指标计算完成，用户数: 1407580
+2025-10-26 17:54:41,415 - __main__ - ERROR - 分析流程执行失败: Bin edges must be unique: Index([1.0, 1.0, 1.0, 2.0, 7757.0], dtype='float64', name='frequency').
+You can drop duplicate edges by setting the 'duplicates' kwarg
+2025-10-26 17:59:26,813 - src.visualization.dashboard - WARNING - 样式 default 不可用，使用默认样式
+2025-10-26 17:59:26,814 - src.visualization.dashboard - INFO - 成功设置seaborn样式
+2025-10-26 17:59:26,814 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-26 17:59:26,814 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-26 17:59:27,498 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-26 17:59:27,498 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-26 17:59:33,134 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-26 17:59:33,134 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-26 17:59:38,070 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-26 17:59:38,301 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-26 17:59:38,480 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-26 17:59:38,480 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-26 17:59:38,480 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-26 17:59:38,480 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-26 17:59:38,480 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-26 17:59:38,480 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-26 17:59:38,480 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-26 17:59:39,625 - src.data.preprocessor - INFO - events数据预处理完成，形状: (2756101, 12)
+2025-10-26 17:59:39,625 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-26 17:59:41,303 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-26 18:00:01,424 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-26 18:00:01,522 - src.data.preprocessor - INFO - 开始合并数据集...
+2025-10-26 18:00:01,522 - src.data.preprocessor - INFO - 检测到大文件，使用优化合并策略...
+2025-10-26 18:00:01,686 - src.data.preprocessor - INFO - 开始优化item_properties内存使用...
+2025-10-26 18:00:02,141 - src.data.preprocessor - INFO - 内存优化完成: 59.62MB -> 22.45MB (节省 37.16MB)
+2025-10-26 18:00:02,675 - src.data.preprocessor - INFO - 数据集合并完成，最终形状: (2756101, 16)
+2025-10-26 18:00:02,679 - src.data.preprocessor - INFO - 属性数据覆盖度: 90.73%
+2025-10-26 18:00:04,028 - src.data.preprocessor - INFO - 处理后的数据已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\processed\processed_data.parquet
+2025-10-26 18:00:04,029 - __main__ - INFO - === 步骤3: RFM分析 ===
+2025-10-26 18:00:04,029 - __main__ - ERROR - 分析流程执行失败: name 'rfm_base' is not defined
+2025-10-26 18:01:58,596 - src.visualization.dashboard - WARNING - 样式 default 不可用，使用默认样式
+2025-10-26 18:01:58,597 - src.visualization.dashboard - INFO - 成功设置seaborn样式
+2025-10-26 18:01:58,597 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-26 18:01:58,597 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-26 18:01:59,307 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-26 18:01:59,307 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-26 18:02:04,974 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-26 18:02:04,974 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-26 18:02:09,786 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-26 18:02:09,969 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-26 18:02:10,133 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-26 18:02:10,133 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-26 18:02:10,133 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-26 18:02:10,133 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-26 18:02:10,133 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-26 18:02:10,133 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-26 18:02:10,133 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-26 18:02:11,206 - src.data.preprocessor - INFO - events数据预处理完成，形状: (2756101, 12)
+2025-10-26 18:02:11,207 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-26 18:02:12,911 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-26 18:02:32,863 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-26 18:02:32,995 - src.data.preprocessor - INFO - 开始合并数据集...
+2025-10-26 18:02:32,995 - src.data.preprocessor - INFO - 检测到大文件，使用优化合并策略...
+2025-10-26 18:02:33,170 - src.data.preprocessor - INFO - 开始优化item_properties内存使用...
+2025-10-26 18:02:33,662 - src.data.preprocessor - INFO - 内存优化完成: 59.62MB -> 22.45MB (节省 37.16MB)
+2025-10-26 18:02:34,238 - src.data.preprocessor - INFO - 数据集合并完成，最终形状: (2756101, 16)
+2025-10-26 18:02:34,242 - src.data.preprocessor - INFO - 属性数据覆盖度: 90.73%
+2025-10-26 18:02:35,618 - src.data.preprocessor - INFO - 处理后的数据已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\processed\processed_data.parquet
+2025-10-26 18:02:35,618 - __main__ - INFO - === 步骤3: RFM分析 ===
+2025-10-26 18:02:35,618 - src.analysis.rfm_analyzer - INFO - 开始计算RFM指标...
+2025-10-26 18:03:28,577 - src.analysis.rfm_analyzer - INFO - RFM指标计算完成，用户数: 1407580
+2025-10-26 18:03:28,579 - src.analysis.rfm_analyzer - INFO - Recency范围: 0 - 137
+2025-10-26 18:03:28,580 - src.analysis.rfm_analyzer - INFO - Frequency范围: 1 - 7757
+2025-10-26 18:03:28,581 - src.analysis.rfm_analyzer - INFO - Monetary范围: 1 - 15664
+2025-10-26 18:03:28,588 - src.analysis.rfm_analyzer - INFO - Frequency前10分布:
+frequency
+1     1001560
+2      205992
+3       79612
+4       38796
+5       22967
+6       14178
+7        9482
+8        6812
+9        4940
+10       3659
+Name: count, dtype: int64
+2025-10-26 18:03:28,588 - src.analysis.rfm_analyzer - INFO - RFM分布分析:
+2025-10-26 18:03:28,628 - src.analysis.rfm_analyzer - INFO - recency: {'min': np.int64(0), 'max': np.int64(137), 'mean': np.float64(67.90162264311797), 'median': np.float64(67.0), 'std': np.float64(39.1610715442167), 'unique': 138}
+2025-10-26 18:03:28,635 - src.analysis.rfm_analyzer - INFO - recency 前5值分布: {53: np.int64(16046), 54: np.int64(14413), 66: np.int64(14338), 65: np.int64(14269), 68: np.int64(13744)}
+2025-10-26 18:03:28,669 - src.analysis.rfm_analyzer - INFO - frequency: {'min': np.int64(1), 'max': np.int64(7757), 'mean': np.float64(1.9580421716705267), 'median': np.float64(1.0), 'std': np.float64(12.58049249101924), 'unique': 343}
+2025-10-26 18:03:28,676 - src.analysis.rfm_analyzer - INFO - frequency 前5值分布: {1: np.int64(1001560), 2: np.int64(205992), 3: np.int64(79612), 4: np.int64(38796), 5: np.int64(22967)}
+2025-10-26 18:03:28,710 - src.analysis.rfm_analyzer - INFO - monetary: {'min': np.int64(1), 'max': np.int64(15664), 'mean': np.float64(2.2986558490458804), 'median': np.float64(1.0), 'std': np.float64(23.436497537369757), 'unique': 444}
+2025-10-26 18:03:28,716 - src.analysis.rfm_analyzer - INFO - monetary 前5值分布: {1: np.int64(998953), 2: np.int64(199135), 3: np.int64(73296), 4: np.int64(34259), 5: np.int64(22220)}
+2025-10-26 18:03:28,718 - __main__ - WARNING - 数据诊断模块不可用，跳过诊断
+2025-10-26 18:03:28,744 - src.analysis.rfm_analyzer - INFO - 使用排名方法计算RFM分数...
+2025-10-26 18:03:34,359 - src.analysis.rfm_analyzer - INFO - 用户分群完成: {'潜力用户': np.int64(523907), '高价值用户': np.int64(353892), '一般用户': np.int64(352662), '流失风险用户': np.int64(177119)}
+2025-10-26 18:03:34,444 - __main__ - INFO - === 步骤4: 行为预测模型训练 ===
+2025-10-26 18:03:34,445 - src.models.predictor - INFO - 开始准备特征数据...
+2025-10-26 18:03:35,454 - src.models.predictor - INFO - 特征准备完成，形状: (1407580, 14)
+2025-10-26 18:03:35,457 - src.models.predictor - INFO - 开始训练预测模型...
+2025-10-26 18:03:56,549 - src.models.predictor - INFO - 模型训练完成
+2025-10-26 18:03:56,564 - src.models.predictor - INFO - 开始模型评估...
+2025-10-26 18:03:56,638 - src.models.predictor - INFO - 模型评估完成
+2025-10-26 18:03:56,665 - src.models.predictor - INFO - 模型已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\models\behavior_predictor.joblib
+2025-10-26 18:03:56,665 - __main__ - INFO - === 步骤5: 可视化展示 ===
+2025-10-26 18:03:56,666 - src.visualization.dashboard - INFO - 创建用户行为分析仪表盘...
+2025-10-26 18:03:58,211 - src.visualization.dashboard - INFO - 仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_dashboard.png
+2025-10-26 18:05:00,784 - src.visualization.dashboard - INFO - 创建RFM分析仪表盘...
+2025-10-26 18:05:42,384 - src.visualization.dashboard - INFO - RFM仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\rfm_dashboard.png
+2025-10-26 18:06:48,957 - src.visualization.dashboard - INFO - 创建交互式仪表盘...
+2025-10-26 18:06:50,205 - src.visualization.dashboard - INFO - 交互式仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\interactive_dashboard.html
+2025-10-26 18:06:50,206 - __main__ - INFO - 电商用户行为分析流程完成！
+2025-10-26 18:06:50,206 - __main__ - INFO - 生成业务洞察报告...
+2025-10-26 18:13:03,235 - src.visualization.dashboard - INFO - 使用中文字体: SimHei
+2025-10-26 18:13:03,236 - src.visualization.dashboard - INFO - 成功设置绘图样式和中文字体
+2025-10-26 18:13:03,236 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-26 18:13:03,236 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-26 18:13:03,924 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-26 18:13:03,924 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-26 18:13:09,449 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-26 18:13:09,449 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-26 18:13:14,212 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-26 18:13:14,439 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-26 18:13:14,623 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-26 18:13:14,624 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-26 18:13:14,624 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-26 18:13:14,624 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-26 18:13:14,624 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-26 18:13:14,624 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-26 18:13:14,624 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-26 18:13:15,761 - src.data.preprocessor - INFO - events数据预处理完成，形状: (2756101, 12)
+2025-10-26 18:13:15,761 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-26 18:13:17,393 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-26 18:13:36,381 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-26 18:13:36,500 - src.data.preprocessor - INFO - 开始合并数据集...
+2025-10-26 18:13:36,500 - src.data.preprocessor - INFO - 检测到大文件，使用优化合并策略...
+2025-10-26 18:13:36,667 - src.data.preprocessor - INFO - 开始优化item_properties内存使用...
+2025-10-26 18:13:37,115 - src.data.preprocessor - INFO - 内存优化完成: 59.62MB -> 22.45MB (节省 37.16MB)
+2025-10-26 18:13:37,651 - src.data.preprocessor - INFO - 数据集合并完成，最终形状: (2756101, 16)
+2025-10-26 18:13:37,655 - src.data.preprocessor - INFO - 属性数据覆盖度: 90.73%
+2025-10-26 18:13:38,970 - src.data.preprocessor - INFO - 处理后的数据已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\processed\processed_data.parquet
+2025-10-26 18:13:38,970 - __main__ - INFO - === 步骤3: RFM分析 ===
+2025-10-26 18:13:38,970 - src.analysis.rfm_analyzer - INFO - 开始计算RFM指标...
+2025-10-26 18:14:31,400 - src.analysis.rfm_analyzer - INFO - RFM指标计算完成，用户数: 1407580
+2025-10-26 18:14:31,402 - src.analysis.rfm_analyzer - INFO - Recency范围: 0 - 137
+2025-10-26 18:14:31,403 - src.analysis.rfm_analyzer - INFO - Frequency范围: 1 - 7757
+2025-10-26 18:14:31,404 - src.analysis.rfm_analyzer - INFO - Monetary范围: 1 - 15664
+2025-10-26 18:14:31,411 - src.analysis.rfm_analyzer - INFO - Frequency前10分布:
+frequency
+1     1001560
+2      205992
+3       79612
+4       38796
+5       22967
+6       14178
+7        9482
+8        6812
+9        4940
+10       3659
+Name: count, dtype: int64
+2025-10-26 18:14:31,411 - src.analysis.rfm_analyzer - INFO - RFM分布分析:
+2025-10-26 18:14:31,452 - src.analysis.rfm_analyzer - INFO - recency: {'min': np.int64(0), 'max': np.int64(137), 'mean': np.float64(67.90162264311797), 'median': np.float64(67.0), 'std': np.float64(39.1610715442167), 'unique': 138}
+2025-10-26 18:14:31,462 - src.analysis.rfm_analyzer - INFO - recency 前5值分布: {53: np.int64(16046), 54: np.int64(14413), 66: np.int64(14338), 65: np.int64(14269), 68: np.int64(13744)}
+2025-10-26 18:14:31,496 - src.analysis.rfm_analyzer - INFO - frequency: {'min': np.int64(1), 'max': np.int64(7757), 'mean': np.float64(1.9580421716705267), 'median': np.float64(1.0), 'std': np.float64(12.58049249101924), 'unique': 343}
+2025-10-26 18:14:31,503 - src.analysis.rfm_analyzer - INFO - frequency 前5值分布: {1: np.int64(1001560), 2: np.int64(205992), 3: np.int64(79612), 4: np.int64(38796), 5: np.int64(22967)}
+2025-10-26 18:14:31,535 - src.analysis.rfm_analyzer - INFO - monetary: {'min': np.int64(1), 'max': np.int64(15664), 'mean': np.float64(2.2986558490458804), 'median': np.float64(1.0), 'std': np.float64(23.436497537369757), 'unique': 444}
+2025-10-26 18:14:31,542 - src.analysis.rfm_analyzer - INFO - monetary 前5值分布: {1: np.int64(998953), 2: np.int64(199135), 3: np.int64(73296), 4: np.int64(34259), 5: np.int64(22220)}
+2025-10-26 18:14:31,543 - __main__ - WARNING - 数据诊断模块不可用，跳过诊断
+2025-10-26 18:14:31,566 - src.analysis.rfm_analyzer - INFO - 使用排名方法计算RFM分数...
+2025-10-26 18:14:37,249 - src.analysis.rfm_analyzer - INFO - 用户分群完成: {'潜力用户': np.int64(523907), '高价值用户': np.int64(353892), '一般用户': np.int64(352662), '流失风险用户': np.int64(177119)}
+2025-10-26 18:14:37,335 - __main__ - INFO - === 步骤4: 行为预测模型训练 ===
+2025-10-26 18:14:37,335 - src.models.predictor - INFO - 开始准备特征数据...
+2025-10-26 18:14:38,301 - src.models.predictor - INFO - 特征准备完成，形状: (1407580, 14)
+2025-10-26 18:14:38,304 - src.models.predictor - INFO - 开始训练预测模型...
+2025-10-26 18:14:59,155 - src.models.predictor - INFO - 模型训练完成
+2025-10-26 18:14:59,170 - src.models.predictor - INFO - 开始模型评估...
+2025-10-26 18:14:59,248 - src.models.predictor - INFO - 模型评估完成
+2025-10-26 18:14:59,277 - src.models.predictor - INFO - 模型已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\models\behavior_predictor.joblib
+2025-10-26 18:14:59,277 - __main__ - INFO - === 步骤5: 可视化展示 ===
+2025-10-26 18:14:59,277 - src.visualization.dashboard - INFO - 创建用户行为分析仪表盘...
+2025-10-26 18:15:00,807 - src.visualization.dashboard - INFO - 仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_dashboard.png
+2025-10-26 18:15:42,941 - src.visualization.dashboard - INFO - 创建RFM分析仪表盘...
+2025-10-26 18:16:23,937 - src.visualization.dashboard - INFO - RFM仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\rfm_dashboard.png
+2025-10-26 18:29:12,677 - src.visualization.dashboard - INFO - 强制设置中文字体...
+2025-10-26 18:29:12,677 - commerce_analysis.src.utils.font_setup - INFO - 开始设置中文字体...
+2025-10-26 18:29:12,677 - commerce_analysis.src.utils.font_setup - WARNING - 字体列表重建失败，使用现有字体
+2025-10-26 18:29:12,678 - commerce_analysis.src.utils.font_setup - INFO - 所有rc参数设置完成
+2025-10-26 18:29:12,797 - commerce_analysis.src.utils.font_setup - INFO - 中文显示测试完成，图片保存为: chinese_display_test.png
+2025-10-26 18:29:12,799 - src.visualization.dashboard - INFO - 绘图样式设置完成
+2025-10-26 18:29:12,799 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-26 18:29:12,799 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-26 18:29:13,497 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-26 18:29:13,497 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-26 18:29:19,165 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-26 18:29:19,165 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-26 18:29:24,108 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-26 18:29:24,285 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-26 18:29:24,449 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-26 18:29:24,449 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-26 18:29:24,449 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-26 18:29:24,449 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-26 18:29:24,449 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-26 18:29:24,449 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-26 18:29:24,449 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-26 18:29:25,470 - src.data.preprocessor - INFO - events数据预处理完成，形状: (2756101, 12)
+2025-10-26 18:29:25,470 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-26 18:29:27,154 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-26 18:29:47,055 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-26 18:29:47,202 - src.data.preprocessor - INFO - 开始合并数据集...
+2025-10-26 18:29:47,203 - src.data.preprocessor - INFO - 检测到大文件，使用优化合并策略...
+2025-10-26 18:29:47,371 - src.data.preprocessor - INFO - 开始优化item_properties内存使用...
+2025-10-26 18:29:47,870 - src.data.preprocessor - INFO - 内存优化完成: 59.62MB -> 22.45MB (节省 37.16MB)
+2025-10-26 18:29:48,437 - src.data.preprocessor - INFO - 数据集合并完成，最终形状: (2756101, 16)
+2025-10-26 18:29:48,440 - src.data.preprocessor - INFO - 属性数据覆盖度: 90.73%
+2025-10-26 18:29:49,759 - src.data.preprocessor - INFO - 处理后的数据已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\processed\processed_data.parquet
+2025-10-26 18:29:49,760 - __main__ - INFO - === 步骤3: RFM分析 ===
+2025-10-26 18:29:49,760 - src.analysis.rfm_analyzer - INFO - 开始计算RFM指标...
+2025-10-26 18:30:42,303 - src.analysis.rfm_analyzer - INFO - RFM指标计算完成，用户数: 1407580
+2025-10-26 18:30:42,304 - src.analysis.rfm_analyzer - INFO - Recency范围: 0 - 137
+2025-10-26 18:30:42,305 - src.analysis.rfm_analyzer - INFO - Frequency范围: 1 - 7757
+2025-10-26 18:30:42,305 - src.analysis.rfm_analyzer - INFO - Monetary范围: 1 - 15664
+2025-10-26 18:30:42,313 - src.analysis.rfm_analyzer - INFO - Frequency前10分布:
+frequency
+1     1001560
+2      205992
+3       79612
+4       38796
+5       22967
+6       14178
+7        9482
+8        6812
+9        4940
+10       3659
+Name: count, dtype: int64
+2025-10-26 18:30:42,314 - src.analysis.rfm_analyzer - INFO - RFM分布分析:
+2025-10-26 18:30:42,353 - src.analysis.rfm_analyzer - INFO - recency: {'min': np.int64(0), 'max': np.int64(137), 'mean': np.float64(67.90162264311797), 'median': np.float64(67.0), 'std': np.float64(39.1610715442167), 'unique': 138}
+2025-10-26 18:30:42,359 - src.analysis.rfm_analyzer - INFO - recency 前5值分布: {53: np.int64(16046), 54: np.int64(14413), 66: np.int64(14338), 65: np.int64(14269), 68: np.int64(13744)}
+2025-10-26 18:30:42,394 - src.analysis.rfm_analyzer - INFO - frequency: {'min': np.int64(1), 'max': np.int64(7757), 'mean': np.float64(1.9580421716705267), 'median': np.float64(1.0), 'std': np.float64(12.58049249101924), 'unique': 343}
+2025-10-26 18:30:42,402 - src.analysis.rfm_analyzer - INFO - frequency 前5值分布: {1: np.int64(1001560), 2: np.int64(205992), 3: np.int64(79612), 4: np.int64(38796), 5: np.int64(22967)}
+2025-10-26 18:30:42,436 - src.analysis.rfm_analyzer - INFO - monetary: {'min': np.int64(1), 'max': np.int64(15664), 'mean': np.float64(2.2986558490458804), 'median': np.float64(1.0), 'std': np.float64(23.436497537369757), 'unique': 444}
+2025-10-26 18:30:42,443 - src.analysis.rfm_analyzer - INFO - monetary 前5值分布: {1: np.int64(998953), 2: np.int64(199135), 3: np.int64(73296), 4: np.int64(34259), 5: np.int64(22220)}
+2025-10-26 18:30:42,443 - __main__ - WARNING - 数据诊断模块不可用，跳过诊断
+2025-10-26 18:30:42,469 - src.analysis.rfm_analyzer - INFO - 使用排名方法计算RFM分数...
+2025-10-26 18:30:47,982 - src.analysis.rfm_analyzer - INFO - 用户分群完成: {'潜力用户': np.int64(523907), '高价值用户': np.int64(353892), '一般用户': np.int64(352662), '流失风险用户': np.int64(177119)}
+2025-10-26 18:30:48,079 - __main__ - INFO - === 步骤4: 行为预测模型训练 ===
+2025-10-26 18:30:48,080 - src.models.predictor - INFO - 开始准备特征数据...
+2025-10-26 18:30:49,157 - src.models.predictor - INFO - 特征准备完成，形状: (1407580, 14)
+2025-10-26 18:30:49,160 - src.models.predictor - INFO - 开始训练预测模型...
+2025-10-26 18:31:10,922 - src.models.predictor - INFO - 模型训练完成
+2025-10-26 18:31:10,936 - src.models.predictor - INFO - 开始模型评估...
+2025-10-26 18:31:11,014 - src.models.predictor - INFO - 模型评估完成
+2025-10-26 18:31:11,042 - src.models.predictor - INFO - 模型已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\models\behavior_predictor.joblib
+2025-10-26 18:31:11,042 - __main__ - INFO - === 步骤5: 可视化展示 ===
+2025-10-26 18:31:11,043 - src.visualization.dashboard - INFO - 创建用户行为分析仪表盘...
+2025-10-26 18:31:11,043 - src.visualization.dashboard - INFO - 强制设置中文字体...
+2025-10-26 18:31:12,562 - src.visualization.dashboard - INFO - 仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_dashboard.png
+2025-10-26 18:31:46,880 - src.visualization.dashboard - INFO - 创建RFM分析仪表盘...
+2025-10-26 18:31:46,880 - src.visualization.dashboard - INFO - 强制设置中文字体...
+2025-10-26 18:32:27,753 - src.visualization.dashboard - INFO - RFM仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\rfm_dashboard.png
+2025-10-26 18:40:52,039 - __main__ - ERROR - 分析流程执行失败: 'DashboardCreator' object has no attribute 'create_interactive_dashboard'
+2025-10-26 18:46:53,630 - src.visualization.dashboard - INFO - 中文字体设置完成
+2025-10-26 18:46:53,631 - src.visualization.dashboard - INFO - 绘图样式设置完成
+2025-10-26 18:46:53,631 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-26 18:46:53,631 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-26 18:46:54,328 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-26 18:46:54,328 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-26 18:46:59,822 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-26 18:46:59,822 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-26 18:47:04,565 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-26 18:47:04,742 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-26 18:47:04,899 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-26 18:47:04,899 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-26 18:47:04,899 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-26 18:47:04,899 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-26 18:47:04,899 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-26 18:47:04,899 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-26 18:47:04,899 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-26 18:47:05,939 - src.data.preprocessor - INFO - events数据预处理完成，形状: (2756101, 12)
+2025-10-26 18:47:05,939 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-26 18:47:07,632 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-26 18:47:27,344 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-26 18:47:27,444 - src.data.preprocessor - INFO - 开始合并数据集...
+2025-10-26 18:47:27,445 - src.data.preprocessor - INFO - 检测到大文件，使用优化合并策略...
+2025-10-26 18:47:27,611 - src.data.preprocessor - INFO - 开始优化item_properties内存使用...
+2025-10-26 18:47:28,076 - src.data.preprocessor - INFO - 内存优化完成: 59.62MB -> 22.45MB (节省 37.16MB)
+2025-10-26 18:47:28,623 - src.data.preprocessor - INFO - 数据集合并完成，最终形状: (2756101, 16)
+2025-10-26 18:47:28,627 - src.data.preprocessor - INFO - 属性数据覆盖度: 90.73%
+2025-10-26 18:47:29,962 - src.data.preprocessor - INFO - 处理后的数据已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\processed\processed_data.parquet
+2025-10-26 18:47:29,962 - __main__ - INFO - === 步骤3: RFM分析 ===
+2025-10-26 18:47:29,962 - src.analysis.rfm_analyzer - INFO - 开始计算RFM指标...
+2025-10-26 18:48:23,710 - src.analysis.rfm_analyzer - INFO - RFM指标计算完成，用户数: 1407580
+2025-10-26 18:48:23,711 - src.analysis.rfm_analyzer - INFO - Recency范围: 0 - 137
+2025-10-26 18:48:23,712 - src.analysis.rfm_analyzer - INFO - Frequency范围: 1 - 7757
+2025-10-26 18:48:23,713 - src.analysis.rfm_analyzer - INFO - Monetary范围: 1 - 15664
+2025-10-26 18:48:23,721 - src.analysis.rfm_analyzer - INFO - Frequency前10分布:
+frequency
+1     1001560
+2      205992
+3       79612
+4       38796
+5       22967
+6       14178
+7        9482
+8        6812
+9        4940
+10       3659
+Name: count, dtype: int64
+2025-10-26 18:48:23,721 - src.analysis.rfm_analyzer - INFO - RFM分布分析:
+2025-10-26 18:48:23,760 - src.analysis.rfm_analyzer - INFO - recency: {'min': np.int64(0), 'max': np.int64(137), 'mean': np.float64(67.90162264311797), 'median': np.float64(67.0), 'std': np.float64(39.1610715442167), 'unique': 138}
+2025-10-26 18:48:23,768 - src.analysis.rfm_analyzer - INFO - recency 前5值分布: {53: np.int64(16046), 54: np.int64(14413), 66: np.int64(14338), 65: np.int64(14269), 68: np.int64(13744)}
+2025-10-26 18:48:23,803 - src.analysis.rfm_analyzer - INFO - frequency: {'min': np.int64(1), 'max': np.int64(7757), 'mean': np.float64(1.9580421716705267), 'median': np.float64(1.0), 'std': np.float64(12.58049249101924), 'unique': 343}
+2025-10-26 18:48:23,811 - src.analysis.rfm_analyzer - INFO - frequency 前5值分布: {1: np.int64(1001560), 2: np.int64(205992), 3: np.int64(79612), 4: np.int64(38796), 5: np.int64(22967)}
+2025-10-26 18:48:23,845 - src.analysis.rfm_analyzer - INFO - monetary: {'min': np.int64(1), 'max': np.int64(15664), 'mean': np.float64(2.2986558490458804), 'median': np.float64(1.0), 'std': np.float64(23.436497537369757), 'unique': 444}
+2025-10-26 18:48:23,852 - src.analysis.rfm_analyzer - INFO - monetary 前5值分布: {1: np.int64(998953), 2: np.int64(199135), 3: np.int64(73296), 4: np.int64(34259), 5: np.int64(22220)}
+2025-10-26 18:48:23,852 - __main__ - WARNING - 数据诊断模块不可用，跳过诊断
+2025-10-26 18:48:23,879 - src.analysis.rfm_analyzer - INFO - 使用排名方法计算RFM分数...
+2025-10-26 18:48:29,584 - src.analysis.rfm_analyzer - INFO - 用户分群完成: {'潜力用户': np.int64(523907), '高价值用户': np.int64(353892), '一般用户': np.int64(352662), '流失风险用户': np.int64(177119)}
+2025-10-26 18:48:29,671 - __main__ - INFO - === 步骤4: 行为预测模型训练 ===
+2025-10-26 18:48:29,671 - src.models.predictor - INFO - 开始准备特征数据...
+2025-10-26 18:48:30,672 - src.models.predictor - INFO - 特征准备完成，形状: (1407580, 14)
+2025-10-26 18:48:30,676 - src.models.predictor - INFO - 开始训练预测模型...
+2025-10-26 18:48:52,557 - src.models.predictor - INFO - 模型训练完成
+2025-10-26 18:48:52,571 - src.models.predictor - INFO - 开始模型评估...
+2025-10-26 18:48:52,661 - src.models.predictor - INFO - 模型评估完成
+2025-10-26 18:48:52,690 - src.models.predictor - INFO - 模型已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\models\behavior_predictor.joblib
+2025-10-26 18:48:52,690 - __main__ - INFO - === 步骤5: 可视化展示 ===
+2025-10-26 18:48:52,690 - src.visualization.dashboard - INFO - 创建用户行为分析仪表盘...
+2025-10-26 18:48:54,219 - src.visualization.dashboard - INFO - 仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_dashboard.png
+2025-10-26 18:49:03,495 - src.visualization.dashboard - INFO - 创建RFM分析仪表盘...
+2025-10-26 18:49:45,161 - src.visualization.dashboard - INFO - RFM仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\rfm_dashboard.png
+2025-10-26 18:50:48,552 - src.visualization.dashboard - INFO - 创建交互式仪表盘...
+2025-10-26 18:50:49,737 - src.visualization.dashboard - INFO - 交互式仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\interactive_dashboard.html
+2025-10-26 18:50:49,950 - __main__ - INFO - 电商用户行为分析流程完成！
+2025-10-26 18:50:49,950 - __main__ - INFO - 生成业务洞察报告...
+2025-10-26 20:48:36,810 - src.visualization.dashboard - INFO - 中文字体设置完成
+2025-10-26 20:48:36,811 - src.visualization.dashboard - INFO - 绘图样式设置完成
+2025-10-26 20:48:36,811 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-26 20:48:36,811 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-26 20:48:37,513 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-26 20:48:37,513 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-26 20:48:43,063 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-26 20:48:43,063 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-26 20:48:47,817 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-26 20:48:48,047 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-26 20:48:48,205 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-26 20:48:48,206 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-26 20:48:48,206 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-26 20:48:48,206 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-26 20:48:48,206 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-26 20:48:48,206 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-26 20:48:48,206 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-26 20:48:49,263 - src.data.preprocessor - INFO - events数据预处理完成，形状: (2756101, 12)
+2025-10-26 20:48:49,263 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-26 20:48:51,101 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-26 20:49:10,477 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-26 20:49:10,607 - src.data.preprocessor - INFO - 开始合并数据集...
+2025-10-26 20:49:10,607 - src.data.preprocessor - INFO - 检测到大文件，使用优化合并策略...
+2025-10-26 20:49:10,777 - src.data.preprocessor - INFO - 开始优化item_properties内存使用...
+2025-10-26 20:49:11,232 - src.data.preprocessor - INFO - 内存优化完成: 59.62MB -> 22.45MB (节省 37.16MB)
+2025-10-26 20:49:11,766 - src.data.preprocessor - INFO - 数据集合并完成，最终形状: (2756101, 16)
+2025-10-26 20:49:11,769 - src.data.preprocessor - INFO - 属性数据覆盖度: 90.73%
+2025-10-26 20:49:13,092 - src.data.preprocessor - INFO - 处理后的数据已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\processed\processed_data.parquet
+2025-10-26 20:49:13,092 - __main__ - INFO - === 步骤3: 用户行为分析 ===
+2025-10-26 20:49:13,094 - src.analysis.user_analyzer - INFO - 开始分析用户行为模式...
+2025-10-26 21:43:05,032 - src.analysis.user_analyzer - INFO - 用户行为模式分析完成
+2025-10-26 21:43:05,032 - src.analysis.user_analyzer - INFO - 创建用户行为分析仪表盘...
+2025-10-27 11:23:59,148 - src.visualization.dashboard - INFO - 中文字体设置完成
+2025-10-27 11:23:59,149 - src.visualization.dashboard - INFO - 绘图样式设置完成
+2025-10-27 11:23:59,149 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-27 11:23:59,149 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-27 11:23:59,901 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-27 11:23:59,901 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-27 11:24:05,614 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-27 11:24:05,614 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-27 11:24:10,379 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-27 11:24:10,630 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-27 11:24:10,809 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-27 11:24:10,809 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-27 11:24:10,809 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-27 11:24:10,809 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-27 11:24:10,809 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-27 11:24:10,809 - __main__ - INFO - 数据集大小: 2,756,101 条记录
+2025-10-27 11:24:10,809 - __main__ - WARNING - 检测到大数据集，自动启用采样模式
+2025-10-27 11:24:10,809 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-27 11:24:10,809 - __main__ - INFO - 使用样本数据模式，采样比例: 0.05
+2025-10-27 11:24:10,809 - src.data.preprocessor - INFO - 创建数据样本，采样比例: 5.0%
+2025-10-27 11:24:10,975 - src.data.preprocessor - INFO - 样本数据创建完成: 138,057 条记录
+2025-10-27 11:24:10,986 - __main__ - INFO - 采样后数据大小: 138,057 条记录
+2025-10-27 11:24:10,986 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-27 11:24:11,045 - src.data.preprocessor - INFO - events数据预处理完成，形状: (138057, 12)
+2025-10-27 11:24:11,045 - __main__ - INFO - 数据量较大，跳过商品属性处理
+2025-10-27 11:24:11,045 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-27 11:24:12,751 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-27 11:24:32,415 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-27 11:24:32,781 - src.data.preprocessor - INFO - 处理后的数据已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\processed\processed_data.parquet
+2025-10-27 11:24:32,781 - __main__ - INFO - === 步骤3: RFM分析 ===
+2025-10-27 11:24:32,781 - src.analysis.rfm_analyzer - INFO - 开始计算RFM指标...
+2025-10-27 11:24:35,751 - src.analysis.rfm_analyzer - INFO - RFM指标计算完成，用户数: 70379
+2025-10-27 11:24:35,751 - src.analysis.rfm_analyzer - INFO - Recency范围: 0 - 137
+2025-10-27 11:24:35,751 - src.analysis.rfm_analyzer - INFO - Frequency范围: 1 - 1251
+2025-10-27 11:24:35,752 - src.analysis.rfm_analyzer - INFO - Monetary范围: 1 - 2668
+2025-10-27 11:24:35,753 - src.analysis.rfm_analyzer - INFO - Frequency前10分布:
+frequency
+1     50062
+2     10202
+3      3939
+4      1942
+5      1215
+6       777
+7       491
+8       334
+9       219
+10      170
+Name: count, dtype: int64
+2025-10-27 11:24:35,754 - src.analysis.rfm_analyzer - INFO - 使用排名方法计算RFM分数...
+2025-10-27 11:24:36,023 - src.analysis.rfm_analyzer - INFO - 用户分群完成: {'潜力用户': np.int64(26275), '一般用户': np.int64(17680), '高价值用户': np.int64(17653), '流失风险用户': np.int64(8771)}
+2025-10-27 11:24:36,034 - __main__ - INFO - === 步骤4: 用户行为分析 ===
+2025-10-27 11:24:36,035 - __main__ - INFO - 使用快速用户行为分析模式
+2025-10-27 11:24:36,035 - commerce_analysis.src.utils.performance_monitor - INFO - 开始执行: analyze_behavior_patterns
+2025-10-27 11:24:36,035 - src.analysis.user_analyzer - INFO - 开始分析用户行为模式...
+2025-10-27 11:24:36,035 - src.analysis.user_analyzer - INFO - 分析用户活跃度...
+2025-10-27 11:24:36,067 - src.analysis.user_analyzer - INFO - 分析行为序列...
+2025-10-27 11:24:36,070 - src.analysis.user_analyzer - WARNING - 用户数量过多，只分析前 10000 个用户
+2025-10-27 11:24:37,897 - src.analysis.user_analyzer - INFO - 分析时间模式...
+2025-10-27 11:24:37,904 - src.analysis.user_analyzer - INFO - 分析转化漏斗...
+2025-10-27 11:24:37,929 - src.analysis.user_analyzer - INFO - 用户行为模式分析完成
+2025-10-27 11:24:37,929 - commerce_analysis.src.utils.performance_monitor - INFO - 完成执行: analyze_behavior_patterns, 耗时: 1.89秒, 内存使用: 3.20MB
+2025-10-27 11:24:37,930 - commerce_analysis.src.utils.performance_monitor - INFO - 开始执行: create_behavior_dashboard
+2025-10-27 11:24:37,930 - src.analysis.user_analyzer - INFO - 创建用户行为分析仪表盘...
+2025-10-27 11:24:38,603 - src.analysis.user_analyzer - INFO - 分析用户活跃度...
+2025-10-27 11:24:38,660 - src.analysis.user_analyzer - INFO - 分析转化漏斗...
+2025-10-27 11:24:38,696 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-27 11:24:38,697 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-27 11:24:40,344 - src.analysis.user_analyzer - INFO - 用户行为仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_analysis.png
+2025-10-27 11:25:18,706 - commerce_analysis.src.utils.performance_monitor - INFO - 完成执行: create_behavior_dashboard, 耗时: 40.78秒, 内存使用: 32.23MB
+2025-10-27 11:25:18,706 - __main__ - INFO - === 步骤5: 商品分析 ===
+2025-10-27 11:25:18,706 - __main__ - INFO - 使用快速商品分析模式
+2025-10-27 11:25:18,706 - src.analysis.product_analyzer - INFO - 开始商品分析...
+2025-10-27 11:25:24,009 - src.analysis.product_analyzer - INFO - 商品分析完成
+2025-10-27 11:25:24,009 - src.analysis.product_analyzer - INFO - 创建商品分析仪表盘...
+2025-10-27 11:25:25,251 - src.analysis.product_analyzer - INFO - 商品分析仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\product_analysis.png
+2025-10-27 11:26:38,537 - __main__ - INFO - === 步骤6: 行为预测模型训练 ===
+2025-10-27 11:26:38,537 - src.models.predictor - INFO - 开始准备特征数据...
+2025-10-27 11:26:38,590 - src.models.predictor - INFO - 特征准备完成，形状: (70379, 14)
+2025-10-27 11:26:38,591 - src.models.predictor - INFO - 开始训练预测模型...
+2025-10-27 11:26:39,305 - src.models.predictor - INFO - 模型训练完成
+2025-10-27 11:26:39,310 - __main__ - INFO - === 步骤7: 模型评估 ===
+2025-10-27 11:26:39,338 - src.models.evaluator - INFO - 开始综合模型评估...
+2025-10-27 11:26:39,367 - src.models.evaluator - INFO - 综合模型评估完成
+2025-10-27 11:26:39,367 - src.models.evaluator - INFO - 创建模型评估仪表盘...
+2025-10-27 11:26:40,398 - src.models.evaluator - INFO - 模型评估仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\model_evaluation.png
+2025-10-27 11:28:04,942 - src.models.evaluator - INFO - 评估报告已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\reports\model_evaluation_report.txt
+2025-10-27 11:28:04,970 - src.models.predictor - INFO - 模型已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\models\behavior_predictor.joblib
+2025-10-27 11:28:04,970 - __main__ - INFO - === 步骤8: 可视化展示 ===
+2025-10-27 11:28:04,970 - src.visualization.dashboard - INFO - 创建用户行为分析仪表盘...
+2025-10-27 11:28:06,201 - src.visualization.dashboard - INFO - 仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_dashboard.png
+2025-10-27 11:28:12,832 - src.visualization.dashboard - INFO - 创建RFM分析仪表盘...
+2025-10-27 11:28:15,589 - src.visualization.dashboard - INFO - RFM仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\rfm_dashboard.png
+2025-10-27 11:28:36,083 - __main__ - INFO - 数据量过大，跳过交互式仪表盘
+2025-10-27 11:28:36,083 - __main__ - INFO - 电商用户行为分析流程完成！
+2025-10-27 11:28:36,083 - __main__ - INFO - 生成业务洞察报告...
+2025-10-27 11:28:36,084 - __main__ - WARNING - 统计计算器不可用，使用基础计算
+2025-10-27 12:08:41,617 - src.visualization.dashboard - INFO - 中文字体设置完成
+2025-10-27 12:08:41,618 - src.visualization.dashboard - INFO - 绘图样式设置完成
+2025-10-27 12:08:41,618 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-27 12:08:41,618 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-27 12:08:42,322 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-27 12:08:42,323 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-27 12:08:47,914 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-27 12:08:47,914 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-27 12:08:52,663 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-27 12:08:52,842 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-27 12:08:53,018 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-27 12:08:53,018 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-27 12:08:53,018 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-27 12:08:53,018 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-27 12:08:53,018 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-27 12:08:53,019 - __main__ - INFO - === 时间数据诊断 ===
+2025-10-27 12:08:53,022 - __main__ - INFO - 数据集大小: 2,756,101 条记录
+2025-10-27 12:08:53,022 - __main__ - WARNING - 检测到大数据集，自动启用采样模式
+2025-10-27 12:08:53,022 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-27 12:08:53,022 - __main__ - INFO - 使用样本数据模式，采样比例: 0.05
+2025-10-27 12:08:53,022 - src.data.preprocessor - INFO - 创建数据样本，采样比例: 5.0%
+2025-10-27 12:08:53,174 - src.data.preprocessor - INFO - 样本数据创建完成: 140,527 条记录
+2025-10-27 12:08:53,185 - __main__ - INFO - 采样后数据大小: 140,527 条记录
+2025-10-27 12:08:53,185 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-27 12:08:53,187 - src.data.preprocessor - INFO - 处理时间戳数据...
+2025-10-27 12:08:53,187 - src.data.preprocessor - INFO - 检测到int64时间戳，按毫秒时间戳处理...
+2025-10-27 12:08:53,187 - src.data.preprocessor - INFO - 示例时间戳: 1433221204592
+2025-10-27 12:08:53,187 - src.data.preprocessor - INFO - 时间戳为毫秒单位
+2025-10-27 12:08:53,196 - src.data.preprocessor - INFO - 时间戳转换结果: 140527 有效, 0 无效
+2025-10-27 12:08:53,197 - src.data.preprocessor - INFO - 时间范围: 2015-05-03 03:00:28.399000 到 2015-09-18 02:58:36.506000
+2025-10-27 12:08:53,197 - src.data.preprocessor - INFO - 时间跨度: 137 天
+2025-10-27 12:08:53,197 - src.data.preprocessor - INFO - 提取时间特征...
+2025-10-27 12:08:53,240 - src.data.preprocessor - INFO - 时间特征统计:
+2025-10-27 12:08:53,241 - src.data.preprocessor - INFO -   时间范围: 2015-05-03 03:00:28.399000 到 2015-09-18 02:58:36.506000
+2025-10-27 12:08:53,243 - src.data.preprocessor - INFO -   数据年份: [2015]
+2025-10-27 12:08:53,244 - src.data.preprocessor - INFO -   周末行为占比: 22.91%
+2025-10-27 12:08:53,245 - src.data.preprocessor - INFO -   最活跃时段: 20:00
+2025-10-27 12:08:53,246 - src.data.preprocessor - INFO -   小时分布: {0: np.int64(7509), 1: np.int64(6881), 2: np.int64(7165), 3: np.int64(7278), 4: np.int64(7453)}...
+2025-10-27 12:08:53,247 - src.data.preprocessor - INFO -   星期分布: {0: np.int64(22945), 1: np.int64(22294), 2: np.int64(21827), 3: np.int64(21822), 4: np.int64(19450), 5: np.int64(15364), 6: np.int64(16825)}
+2025-10-27 12:08:53,247 - src.data.preprocessor - INFO - events数据预处理完成，形状: (140527, 13)
+2025-10-27 12:08:53,247 - __main__ - INFO - 数据量较大，跳过商品属性处理
+2025-10-27 12:08:53,247 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-27 12:08:54,924 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-27 12:09:13,974 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-27 12:09:14,179 - src.data.preprocessor - INFO - 处理后的数据已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\processed\processed_data.parquet
+2025-10-27 12:09:14,179 - __main__ - INFO - === 步骤3: RFM分析 ===
+2025-10-27 12:09:14,179 - src.analysis.rfm_analyzer - INFO - 开始计算RFM指标...
+2025-10-27 12:09:17,155 - src.analysis.rfm_analyzer - INFO - RFM指标计算完成，用户数: 70379
+2025-10-27 12:09:17,155 - src.analysis.rfm_analyzer - INFO - Recency范围: 0 - 137
+2025-10-27 12:09:17,155 - src.analysis.rfm_analyzer - INFO - Frequency范围: 1 - 3024
+2025-10-27 12:09:17,155 - src.analysis.rfm_analyzer - INFO - Monetary范围: 1 - 7649
+2025-10-27 12:09:17,156 - src.analysis.rfm_analyzer - INFO - Frequency前10分布:
+frequency
+1     50056
+2     10379
+3      3966
+4      1936
+5      1151
+6       698
+7       465
+8       355
+9       225
+10      179
+Name: count, dtype: int64
+2025-10-27 12:09:17,159 - src.analysis.rfm_analyzer - INFO - 使用排名方法计算RFM分数...
+2025-10-27 12:09:17,428 - src.analysis.rfm_analyzer - INFO - 用户分群完成: {'潜力用户': np.int64(26004), '高价值用户': np.int64(17798), '一般用户': np.int64(17736), '流失风险用户': np.int64(8841)}
+2025-10-27 12:09:17,439 - __main__ - INFO - === 步骤4: 用户行为分析 ===
+2025-10-27 12:09:17,439 - __main__ - INFO - 使用快速用户行为分析模式
+2025-10-27 12:09:17,439 - commerce_analysis.src.utils.performance_monitor - INFO - 开始执行: analyze_behavior_patterns
+2025-10-27 12:09:17,439 - src.analysis.user_analyzer - INFO - 开始分析用户行为模式...
+2025-10-27 12:09:17,439 - src.analysis.user_analyzer - INFO - 分析用户活跃度...
+2025-10-27 12:09:17,475 - src.analysis.user_analyzer - INFO - 分析行为序列...
+2025-10-27 12:09:17,479 - src.analysis.user_analyzer - WARNING - 用户数量过多，只分析前 10000 个用户
+2025-10-27 12:09:19,851 - src.analysis.user_analyzer - INFO - 分析时间模式...
+2025-10-27 12:09:19,859 - src.analysis.user_analyzer - INFO - 分析转化漏斗...
+2025-10-27 12:09:19,887 - src.analysis.user_analyzer - INFO - 用户行为模式分析完成
+2025-10-27 12:09:19,887 - commerce_analysis.src.utils.performance_monitor - INFO - 完成执行: analyze_behavior_patterns, 耗时: 2.45秒, 内存使用: 6.46MB
+2025-10-27 12:09:19,887 - commerce_analysis.src.utils.performance_monitor - INFO - 开始执行: create_behavior_dashboard
+2025-10-27 12:09:19,887 - src.analysis.user_analyzer - INFO - 创建用户行为分析仪表盘...
+2025-10-27 12:09:20,001 - src.analysis.user_analyzer - INFO - 分析用户活跃度...
+2025-10-27 12:09:20,064 - src.analysis.user_analyzer - INFO - 分析转化漏斗...
+2025-10-27 12:09:20,108 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-27 12:09:20,109 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-27 12:09:21,940 - src.analysis.user_analyzer - INFO - 用户行为仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_analysis.png
+2025-10-27 12:13:28,414 - commerce_analysis.src.utils.performance_monitor - INFO - 完成执行: create_behavior_dashboard, 耗时: 248.53秒, 内存使用: 30.19MB
+2025-10-27 12:13:28,414 - __main__ - INFO - === 步骤5: 商品分析 ===
+2025-10-27 12:13:28,414 - __main__ - INFO - 使用快速商品分析模式
+2025-10-27 12:13:28,414 - src.analysis.product_analyzer - INFO - 开始商品分析...
+2025-10-27 12:13:34,726 - src.analysis.product_analyzer - INFO - 商品分析完成
+2025-10-27 12:13:34,726 - src.analysis.product_analyzer - INFO - 创建商品分析仪表盘...
+2025-10-27 12:13:35,966 - src.analysis.product_analyzer - INFO - 商品分析仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\product_analysis.png
+2025-10-27 12:17:14,714 - __main__ - INFO - === 步骤6: 行为预测模型训练 ===
+2025-10-27 12:17:14,715 - src.models.predictor - INFO - 开始准备特征数据...
+2025-10-27 12:17:14,769 - src.models.predictor - INFO - 特征准备完成，形状: (70379, 14)
+2025-10-27 12:17:14,770 - src.models.predictor - INFO - 开始训练预测模型...
+2025-10-27 12:17:15,544 - src.models.predictor - INFO - 模型训练完成
+2025-10-27 12:17:15,548 - __main__ - INFO - === 步骤7: 模型评估 ===
+2025-10-27 12:17:15,582 - src.models.evaluator - INFO - 开始综合模型评估...
+2025-10-27 12:17:15,610 - src.models.evaluator - INFO - 综合模型评估完成
+2025-10-27 12:17:15,610 - src.models.evaluator - INFO - 创建模型评估仪表盘...
+2025-10-27 12:17:16,664 - src.models.evaluator - INFO - 模型评估仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\model_evaluation.png
+2025-10-27 12:17:20,386 - src.models.evaluator - INFO - 评估报告已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\reports\model_evaluation_report.txt
+2025-10-27 12:17:20,419 - src.models.predictor - INFO - 模型已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\models\behavior_predictor.joblib
+2025-10-27 12:17:20,420 - __main__ - INFO - === 步骤8: 可视化展示 ===
+2025-10-27 12:17:20,420 - src.visualization.dashboard - INFO - 创建用户行为分析仪表盘...
+2025-10-27 12:17:21,562 - src.visualization.dashboard - INFO - 仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_dashboard.png
+2025-10-27 12:17:23,309 - src.visualization.dashboard - INFO - 创建RFM分析仪表盘...
+2025-10-27 12:17:26,136 - src.visualization.dashboard - INFO - RFM仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\rfm_dashboard.png
+2025-10-27 12:17:29,510 - __main__ - INFO - 数据量过大，跳过交互式仪表盘
+2025-10-27 12:17:29,510 - __main__ - INFO - 电商用户行为分析流程完成！
+2025-10-27 12:17:29,510 - __main__ - INFO - 生成业务洞察报告...
+2025-10-27 12:17:29,512 - __main__ - WARNING - 统计计算器不可用，使用基础计算
+2025-10-27 12:18:27,284 - src.visualization.dashboard - INFO - 中文字体设置完成
+2025-10-27 12:18:27,285 - src.visualization.dashboard - INFO - 绘图样式设置完成
+2025-10-27 12:18:27,285 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-27 12:18:27,285 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-27 12:18:27,980 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-27 12:18:27,980 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-27 12:18:33,544 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-27 12:18:33,544 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-27 12:18:38,304 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-27 12:18:38,484 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-27 12:18:38,640 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-27 12:18:38,640 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-27 12:18:38,640 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-27 12:18:38,640 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-27 12:18:38,640 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-27 12:18:38,640 - __main__ - INFO - === 时间数据诊断 ===
+2025-10-27 12:18:38,645 - __main__ - INFO - 数据集大小: 2,756,101 条记录
+2025-10-27 12:18:38,645 - __main__ - WARNING - 检测到大数据集，自动启用采样模式
+2025-10-27 12:18:38,645 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-27 12:18:38,645 - __main__ - INFO - 使用样本数据模式，采样比例: 0.05
+2025-10-27 12:18:38,645 - src.data.preprocessor - INFO - 创建数据样本，采样比例: 5.0%
+2025-10-27 12:18:38,770 - src.data.preprocessor - INFO - 样本数据创建完成: 135,516 条记录
+2025-10-27 12:18:38,780 - __main__ - INFO - 采样后数据大小: 135,516 条记录
+2025-10-27 12:18:38,780 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-27 12:18:38,783 - src.data.preprocessor - INFO - 处理时间戳数据...
+2025-10-27 12:18:38,783 - src.data.preprocessor - INFO - 检测到int64时间戳，按毫秒时间戳处理...
+2025-10-27 12:18:38,783 - src.data.preprocessor - INFO - 示例时间戳: 1433221380636
+2025-10-27 12:18:38,783 - src.data.preprocessor - INFO - 时间戳为毫秒单位
+2025-10-27 12:18:38,789 - src.data.preprocessor - INFO - 时间戳转换结果: 135516 有效, 0 无效
+2025-10-27 12:18:38,790 - src.data.preprocessor - INFO - 时间范围: 2015-05-03 03:01:21.464000 到 2015-09-18 02:59:24.029000
+2025-10-27 12:18:38,790 - src.data.preprocessor - INFO - 时间跨度: 137 天
+2025-10-27 12:18:38,790 - src.data.preprocessor - INFO - 提取时间特征...
+2025-10-27 12:18:38,827 - src.data.preprocessor - INFO - 时间特征统计:
+2025-10-27 12:18:38,828 - src.data.preprocessor - INFO -   时间范围: 2015-05-03 03:01:21.464000 到 2015-09-18 02:59:24.029000
+2025-10-27 12:18:38,829 - src.data.preprocessor - INFO -   数据年份: [2015]
+2025-10-27 12:18:38,829 - src.data.preprocessor - INFO -   周末行为占比: 23.28%
+2025-10-27 12:18:38,830 - src.data.preprocessor - INFO -   最活跃时段: 20:00
+2025-10-27 12:18:38,830 - src.data.preprocessor - INFO -   小时分布: {0: np.int64(6998), 1: np.int64(6823), 2: np.int64(7178), 3: np.int64(7398), 4: np.int64(7547)}...
+2025-10-27 12:18:38,830 - src.data.preprocessor - INFO -   星期分布: {0: np.int64(21127), 1: np.int64(22071), 2: np.int64(20845), 3: np.int64(20797), 4: np.int64(19134), 5: np.int64(15379), 6: np.int64(16163)}
+2025-10-27 12:18:38,830 - src.data.preprocessor - INFO - events数据预处理完成，形状: (135516, 13)
+2025-10-27 12:18:38,831 - __main__ - INFO - 数据量较大，跳过商品属性处理
+2025-10-27 12:18:38,831 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-27 12:18:40,504 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-27 12:18:59,477 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-27 12:18:59,678 - src.data.preprocessor - INFO - 处理后的数据已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\processed\processed_data.parquet
+2025-10-27 12:18:59,679 - __main__ - INFO - === 步骤3: RFM分析 ===
+2025-10-27 12:18:59,679 - src.analysis.rfm_analyzer - INFO - 开始计算RFM指标...
+2025-10-27 12:19:02,638 - src.analysis.rfm_analyzer - INFO - RFM指标计算完成，用户数: 70379
+2025-10-27 12:19:02,638 - src.analysis.rfm_analyzer - INFO - Recency范围: 0 - 137
+2025-10-27 12:19:02,638 - src.analysis.rfm_analyzer - INFO - Frequency范围: 1 - 1663
+2025-10-27 12:19:02,638 - src.analysis.rfm_analyzer - INFO - Monetary范围: 1 - 3222
+2025-10-27 12:19:02,640 - src.analysis.rfm_analyzer - INFO - Frequency前10分布:
+frequency
+1     50113
+2     10287
+3      3921
+4      1956
+5      1148
+6       725
+7       491
+8       353
+9       246
+10      169
+Name: count, dtype: int64
+2025-10-27 12:19:02,641 - src.analysis.rfm_analyzer - INFO - 使用排名方法计算RFM分数...
+2025-10-27 12:19:02,902 - src.analysis.rfm_analyzer - INFO - 用户分群完成: {'潜力用户': np.int64(26163), '高价值用户': np.int64(17733), '一般用户': np.int64(17587), '流失风险用户': np.int64(8896)}
+2025-10-27 12:19:02,914 - __main__ - INFO - === 步骤4: 用户行为分析 ===
+2025-10-27 12:19:02,914 - __main__ - INFO - 使用快速用户行为分析模式
+2025-10-27 12:19:02,914 - commerce_analysis.src.utils.performance_monitor - INFO - 开始执行: analyze_behavior_patterns
+2025-10-27 12:19:02,914 - src.analysis.user_analyzer - INFO - 开始分析用户行为模式...
+2025-10-27 12:19:02,914 - src.analysis.user_analyzer - INFO - 分析用户活跃度...
+2025-10-27 12:19:02,947 - src.analysis.user_analyzer - INFO - 分析行为序列...
+2025-10-27 12:19:02,950 - src.analysis.user_analyzer - WARNING - 用户数量过多，只分析前 10000 个用户
+2025-10-27 12:19:05,132 - src.analysis.user_analyzer - INFO - 分析时间模式...
+2025-10-27 12:19:05,139 - src.analysis.user_analyzer - INFO - 分析转化漏斗...
+2025-10-27 12:19:05,165 - src.analysis.user_analyzer - INFO - 用户行为模式分析完成
+2025-10-27 12:19:05,165 - commerce_analysis.src.utils.performance_monitor - INFO - 完成执行: analyze_behavior_patterns, 耗时: 2.25秒, 内存使用: 4.09MB
+2025-10-27 12:19:05,165 - commerce_analysis.src.utils.performance_monitor - INFO - 开始执行: create_behavior_dashboard
+2025-10-27 12:19:05,165 - src.analysis.user_analyzer - INFO - 创建用户行为分析仪表盘...
+2025-10-27 12:19:05,284 - src.analysis.user_analyzer - INFO - 分析用户活跃度...
+2025-10-27 12:19:05,341 - src.analysis.user_analyzer - INFO - 分析转化漏斗...
+2025-10-27 12:19:05,382 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-27 12:19:05,383 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-27 12:19:07,202 - src.analysis.user_analyzer - INFO - 用户行为仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_analysis.png
+2025-10-27 12:19:11,975 - commerce_analysis.src.utils.performance_monitor - INFO - 完成执行: create_behavior_dashboard, 耗时: 6.81秒, 内存使用: 32.12MB
+2025-10-27 12:19:11,975 - __main__ - INFO - === 步骤5: 商品分析 ===
+2025-10-27 12:19:11,975 - __main__ - INFO - 使用快速商品分析模式
+2025-10-27 12:19:11,975 - src.analysis.product_analyzer - INFO - 开始商品分析...
+2025-10-27 12:19:16,908 - src.analysis.product_analyzer - INFO - 商品分析完成
+2025-10-27 12:19:16,908 - src.analysis.product_analyzer - INFO - 创建商品分析仪表盘...
+2025-10-27 12:19:18,120 - src.analysis.product_analyzer - INFO - 商品分析仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\product_analysis.png
+2025-10-27 12:19:22,561 - __main__ - INFO - === 步骤6: 行为预测模型训练 ===
+2025-10-27 12:19:22,562 - src.models.predictor - INFO - 开始准备特征数据...
+2025-10-27 12:19:22,610 - src.models.predictor - INFO - 特征准备完成，形状: (70379, 14)
+2025-10-27 12:19:22,610 - src.models.predictor - INFO - 开始训练预测模型...
+2025-10-27 12:19:23,318 - src.models.predictor - INFO - 模型训练完成
+2025-10-27 12:19:23,323 - __main__ - INFO - === 步骤7: 模型评估 ===
+2025-10-27 12:19:23,349 - src.models.evaluator - INFO - 开始综合模型评估...
+2025-10-27 12:19:23,377 - src.models.evaluator - INFO - 综合模型评估完成
+2025-10-27 12:19:23,378 - src.models.evaluator - INFO - 创建模型评估仪表盘...
+2025-10-27 12:19:24,393 - src.models.evaluator - INFO - 模型评估仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\model_evaluation.png
+2025-10-27 12:19:27,613 - src.models.evaluator - INFO - 评估报告已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\reports\model_evaluation_report.txt
+2025-10-27 12:19:27,641 - src.models.predictor - INFO - 模型已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\models\behavior_predictor.joblib
+2025-10-27 12:19:27,641 - __main__ - INFO - === 步骤8: 可视化展示 ===
+2025-10-27 12:19:27,641 - src.visualization.dashboard - INFO - 创建用户行为分析仪表盘...
+2025-10-27 12:19:28,828 - src.visualization.dashboard - INFO - 仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_dashboard.png
+2025-10-27 12:19:33,287 - src.visualization.dashboard - INFO - 创建RFM分析仪表盘...
+2025-10-27 12:19:36,072 - src.visualization.dashboard - INFO - RFM仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\rfm_dashboard.png
+2025-10-27 12:19:39,328 - __main__ - INFO - 数据量过大，跳过交互式仪表盘
+2025-10-27 12:19:39,328 - __main__ - INFO - 电商用户行为分析流程完成！
+2025-10-27 12:19:39,328 - __main__ - INFO - 生成业务洞察报告...
+2025-10-27 12:19:39,329 - __main__ - WARNING - 统计计算器不可用，使用基础计算
+2025-10-27 12:46:36,679 - src.visualization.dashboard - INFO - 中文字体设置完成
+2025-10-27 12:46:36,681 - src.visualization.dashboard - INFO - 绘图样式设置完成
+2025-10-27 12:46:36,681 - __main__ - INFO - 开始电商用户行为分析流程...
+2025-10-27 12:46:36,681 - __main__ - INFO - === 步骤1: 数据加载 ===
+2025-10-27 12:46:37,409 - src.data.loader - INFO - 成功加载events数据，形状: (2756101, 5)
+2025-10-27 12:46:37,409 - src.data.loader - INFO - 正在加载 item_properties_part1...
+2025-10-27 12:46:43,165 - src.data.loader - INFO - 成功加载 item_properties_part1，形状: (10999999, 4)
+2025-10-27 12:46:43,166 - src.data.loader - INFO - 正在加载 item_properties_part2...
+2025-10-27 12:46:48,219 - src.data.loader - INFO - 成功加载 item_properties_part2，形状: (9275903, 4)
+2025-10-27 12:46:48,441 - src.data.loader - INFO - 所有item_properties文件合并完成，总形状: (20275902, 4)
+2025-10-27 12:46:48,631 - src.data.loader - INFO - 成功加载category_tree数据，形状: (1669, 2)
+2025-10-27 12:46:48,631 - src.data.loader - INFO - 开始数据质量验证...
+2025-10-27 12:46:48,631 - src.data.loader - INFO - events数据记录数: 2,756,101
+2025-10-27 12:46:48,631 - src.data.loader - INFO - item_properties数据记录数: 20,275,902
+2025-10-27 12:46:48,631 - src.data.loader - INFO - category_tree数据记录数: 1,669
+2025-10-27 12:46:48,631 - __main__ - INFO - === 时间数据诊断 ===
+2025-10-27 12:46:48,636 - __main__ - INFO - 数据集大小: 2,756,101 条记录
+2025-10-27 12:46:48,636 - __main__ - WARNING - 检测到大数据集，自动启用采样模式
+2025-10-27 12:46:48,636 - __main__ - INFO - === 步骤2: 数据预处理 ===
+2025-10-27 12:46:48,636 - __main__ - INFO - 使用样本数据模式，采样比例: 0.05
+2025-10-27 12:46:48,636 - src.data.preprocessor - INFO - 创建数据样本，采样比例: 5.0%
+2025-10-27 12:46:48,801 - src.data.preprocessor - INFO - 样本数据创建完成: 134,976 条记录
+2025-10-27 12:46:48,812 - __main__ - INFO - 采样后数据大小: 134,976 条记录
+2025-10-27 12:46:48,812 - src.data.preprocessor - INFO - 开始预处理events数据...
+2025-10-27 12:46:48,814 - src.data.preprocessor - INFO - 处理时间戳数据...
+2025-10-27 12:46:48,814 - src.data.preprocessor - INFO - 检测到int64时间戳，按毫秒时间戳处理...
+2025-10-27 12:46:48,814 - src.data.preprocessor - INFO - 示例时间戳: 1433223785793
+2025-10-27 12:46:48,814 - src.data.preprocessor - INFO - 时间戳为毫秒单位
+2025-10-27 12:46:48,823 - src.data.preprocessor - INFO - 时间戳转换结果: 134976 有效, 0 无效
+2025-10-27 12:46:48,823 - src.data.preprocessor - INFO - 时间范围: 2015-05-03 03:01:29.299000 到 2015-09-18 02:59:13.842000
+2025-10-27 12:46:48,823 - src.data.preprocessor - INFO - 时间跨度: 137 天
+2025-10-27 12:46:48,824 - src.data.preprocessor - INFO - 提取时间特征...
+2025-10-27 12:46:48,866 - src.data.preprocessor - INFO - 时间特征统计:
+2025-10-27 12:46:48,867 - src.data.preprocessor - INFO -   时间范围: 2015-05-03 03:01:29.299000 到 2015-09-18 02:59:13.842000
+2025-10-27 12:46:48,868 - src.data.preprocessor - INFO -   数据年份: [2015]
+2025-10-27 12:46:48,868 - src.data.preprocessor - INFO -   周末行为占比: 23.19%
+2025-10-27 12:46:48,869 - src.data.preprocessor - INFO -   最活跃时段: 20:00
+2025-10-27 12:46:48,869 - src.data.preprocessor - INFO -   小时分布: {0: np.int64(6566), 1: np.int64(6953), 2: np.int64(7310), 3: np.int64(7427), 4: np.int64(7103)}...
+2025-10-27 12:46:48,872 - src.data.preprocessor - INFO -   星期分布: {0: np.int64(21320), 1: np.int64(21891), 2: np.int64(20955), 3: np.int64(20811), 4: np.int64(18694), 5: np.int64(14750), 6: np.int64(16555)}
+2025-10-27 12:46:48,872 - src.data.preprocessor - INFO - events数据预处理完成，形状: (134976, 13)
+2025-10-27 12:46:48,872 - __main__ - INFO - 数据量较大，跳过商品属性处理
+2025-10-27 12:46:48,872 - src.data.preprocessor - INFO - 开始预处理item_properties数据...
+2025-10-27 12:46:50,639 - src.data.preprocessor - INFO - 正在提取每个商品的最新属性...
+2025-10-27 12:47:10,306 - src.data.preprocessor - INFO - item_properties数据预处理完成，提取了 417053 个商品的属性
+2025-10-27 12:47:10,499 - src.data.preprocessor - INFO - 处理后的数据已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\processed\processed_data.parquet
+2025-10-27 12:47:10,499 - __main__ - INFO - === 步骤3: RFM分析 ===
+2025-10-27 12:47:10,499 - src.analysis.rfm_analyzer - INFO - 开始计算RFM指标...
+2025-10-27 12:47:13,443 - src.analysis.rfm_analyzer - INFO - RFM指标计算完成，用户数: 70379
+2025-10-27 12:47:13,443 - src.analysis.rfm_analyzer - INFO - Recency范围: 0 - 137
+2025-10-27 12:47:13,443 - src.analysis.rfm_analyzer - INFO - Frequency范围: 1 - 1251
+2025-10-27 12:47:13,443 - src.analysis.rfm_analyzer - INFO - Monetary范围: 1 - 3162
+2025-10-27 12:47:13,444 - src.analysis.rfm_analyzer - INFO - Frequency前10分布:
+frequency
+1     49948
+2     10420
+3      3942
+4      1915
+5      1131
+6       715
+7       491
+8       327
+9       269
+10      202
+Name: count, dtype: int64
+2025-10-27 12:47:13,446 - src.analysis.rfm_analyzer - INFO - 使用排名方法计算RFM分数...
+2025-10-27 12:47:13,741 - src.analysis.rfm_analyzer - INFO - 用户分群完成: {'潜力用户': np.int64(26347), '高价值用户': np.int64(17644), '一般用户': np.int64(17520), '流失风险用户': np.int64(8868)}
+2025-10-27 12:47:13,754 - __main__ - INFO - === 步骤4: 用户行为分析 ===
+2025-10-27 12:47:13,754 - __main__ - INFO - 使用快速用户行为分析模式
+2025-10-27 12:47:13,754 - commerce_analysis.src.utils.performance_monitor - INFO - 开始执行: analyze_behavior_patterns
+2025-10-27 12:47:13,754 - src.analysis.user_analyzer - INFO - 开始分析用户行为模式...
+2025-10-27 12:47:13,754 - src.analysis.user_analyzer - INFO - 分析用户活跃度...
+2025-10-27 12:47:13,787 - src.analysis.user_analyzer - INFO - 分析行为序列...
+2025-10-27 12:47:13,791 - src.analysis.user_analyzer - WARNING - 用户数量过多，只分析前 10000 个用户
+2025-10-27 12:47:16,038 - src.analysis.user_analyzer - INFO - 分析时间模式...
+2025-10-27 12:47:16,045 - src.analysis.user_analyzer - INFO - 分析转化漏斗...
+2025-10-27 12:47:16,072 - src.analysis.user_analyzer - INFO - 用户行为模式分析完成
+2025-10-27 12:47:16,073 - commerce_analysis.src.utils.performance_monitor - INFO - 完成执行: analyze_behavior_patterns, 耗时: 2.32秒, 内存使用: 3.85MB
+2025-10-27 12:47:16,073 - commerce_analysis.src.utils.performance_monitor - INFO - 开始执行: create_behavior_dashboard
+2025-10-27 12:47:16,073 - src.analysis.user_analyzer - INFO - 创建用户行为分析仪表盘...
+2025-10-27 12:47:16,192 - src.analysis.user_analyzer - INFO - 分析用户活跃度...
+2025-10-27 12:47:16,250 - src.analysis.user_analyzer - INFO - 分析转化漏斗...
+2025-10-27 12:47:16,299 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-27 12:47:16,299 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-27 12:47:18,150 - src.analysis.user_analyzer - INFO - 用户行为仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_analysis.png
+2025-10-27 12:47:20,165 - commerce_analysis.src.utils.performance_monitor - INFO - 完成执行: create_behavior_dashboard, 耗时: 4.09秒, 内存使用: 32.27MB
+2025-10-27 12:47:20,165 - __main__ - INFO - === 步骤5: 商品分析 ===
+2025-10-27 12:47:20,165 - __main__ - INFO - 使用快速商品分析模式
+2025-10-27 12:47:20,165 - src.analysis.product_analyzer - INFO - 开始商品分析...
+2025-10-27 12:47:25,102 - src.analysis.product_analyzer - INFO - 商品分析完成
+2025-10-27 12:47:25,102 - src.analysis.product_analyzer - INFO - 创建商品分析仪表盘...
+2025-10-27 12:47:26,326 - src.analysis.product_analyzer - INFO - 商品分析仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\product_analysis.png
+2025-10-27 12:47:40,359 - __main__ - INFO - === 步骤6: 行为预测模型训练 ===
+2025-10-27 12:47:40,359 - src.models.predictor - INFO - 开始准备特征数据...
+2025-10-27 12:47:40,411 - src.models.predictor - INFO - 特征准备完成，形状: (70379, 14)
+2025-10-27 12:47:40,412 - src.models.predictor - INFO - 开始训练预测模型...
+2025-10-27 12:47:41,165 - src.models.predictor - INFO - 模型训练完成
+2025-10-27 12:47:41,170 - __main__ - INFO - === 步骤7: 模型评估 ===
+2025-10-27 12:47:41,198 - src.models.evaluator - INFO - 开始综合模型评估...
+2025-10-27 12:47:41,227 - src.models.evaluator - INFO - 综合模型评估完成
+2025-10-27 12:47:41,227 - src.models.evaluator - INFO - 创建模型评估仪表盘...
+2025-10-27 12:47:42,295 - src.models.evaluator - INFO - 模型评估仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\model_evaluation.png
+2025-10-27 12:47:44,222 - src.models.evaluator - INFO - 评估报告已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\reports\model_evaluation_report.txt
+2025-10-27 12:47:44,253 - src.models.predictor - INFO - 模型已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\data\models\behavior_predictor.joblib
+2025-10-27 12:47:44,253 - __main__ - INFO - === 步骤8: 可视化展示 ===
+2025-10-27 12:47:44,253 - src.visualization.dashboard - INFO - 创建用户行为分析仪表盘...
+2025-10-27 12:47:45,363 - src.visualization.dashboard - INFO - 仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\user_behavior_dashboard.png
+2025-10-27 12:47:47,172 - src.visualization.dashboard - INFO - 创建RFM分析仪表盘...
+2025-10-27 12:47:50,018 - src.visualization.dashboard - INFO - RFM仪表盘已保存至: G:\Pycharm\Project\AI_learning\20231118\NLPProject05\commerce_analysis\outputs\figures\rfm_dashboard.png
+2025-10-27 12:47:53,384 - __main__ - INFO - 数据量过大，跳过交互式仪表盘
+2025-10-27 12:47:53,384 - __main__ - INFO - 电商用户行为分析流程完成！
+2025-10-27 12:47:53,384 - __main__ - INFO - 生成业务洞察报告...
+2025-10-27 12:47:53,385 - __main__ - WARNING - 统计计算器不可用，使用基础计算
